@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;/*độ cao chữ 16px*/
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;/*cuộn mượt*/
+}
+
+.header__top{
+    background-color: #111111;
+    color: #fff;
+    height: 46px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.header__top__group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+}
+
+.header__top__left{
+    padding: 0 25px;
+}
+
+/* .header__top__left--policy{
+
+} */
+
+.header__top__right{
+    padding: 0 25px;
+    display: flex;
+}
+
+.header__top__right--sign{
+    margin-right: 28px;
+}
+
+.header__top__right--sign-link{
+    color: #fff;
+    text-decoration: none; 
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.header__top__right--faqs{
+    margin-right: 25px;
+}
+
+.header__top__right--faqs-link{
+    color: #fff;
+    text-decoration: none; 
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.header__top__right--money{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__top__right--money:hover .header__top__right--money-list{
+    display:block;
+}
+
+.header__top__right--money-selected{
+    padding-right: 4px;
+}
+
+.header__top__right--money-list{
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: slide-up linear 0.2s;
+    
+}
+
+@keyframes slide-up {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slide-down {
+    from{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.header__top__right--money-item{
+    color: #111111;
+    font-size: 1.3rem;
+    margin: 5px 0;
+}
