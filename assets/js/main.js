@@ -71,3 +71,38 @@ tabs.forEach(function(tab,index){
     }
 })
 // End tab pane highlight
+
+
+// Start countdown time
+
+var day = document.querySelector("#days")
+var hour = document.querySelector("#hours")
+var minute = document.querySelector("#minutes")
+var second = document.querySelector("#seconds")
+
+var countDownDate = new Date("Mar 5, 2022 15:37:25").getTime();
+var x = setInterval(function() {
+
+    var now = new Date().getTime();
+  
+    var distance = countDownDate - now;
+  
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    day.innerHTML = `${days<10 ? '0'+days : days} <span>:</span>`
+    hour.innerHTML = `${hours<10 ? '0'+hours : hours} <span>:</span>`
+    minute.innerHTML = `${minutes<10 ? '0'+minutes : minutes} <span>:</span>`
+    second.innerHTML = `${seconds<10 ? '0'+seconds : seconds}`
+
+    if (distance < 0) {
+        clearInterval(x);
+        day.innerText = "00"
+        hour.innerText = "00"
+        minute.innerText = "00"
+        second.innerText = "00"
+    }
+  }, 1000);
+// End countdown time
