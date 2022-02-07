@@ -22,6 +22,30 @@ html {
     padding-right: 30px;
 }
 
+.pd-left-0{
+    padding-left: 0px;
+}
+
+.pd-right-0{
+    padding-right: 0px;
+}
+
+
+.pd-right-100{
+    padding-right: 100px;
+}
+
+.mr-left-15{
+    margin-left: 15px;
+}
+
+.mr-right-15{
+    margin-right: 15px;
+}
+
+.mr-top-180{
+    margin-top: -180px;
+}
 
 /* Header Top */
 .header__top{
@@ -290,4 +314,62 @@ html {
     top: 520px;
     cursor: pointer;
     left: calc(1200px + 30px);
+}
+
+
+/* Highlight */
+
+.highlight__item{
+    height: 100%;
+    position: relative;
+    padding-top: 105px;
+}
+
+.highlight__item:hover .highlight__item--text-link::before{
+    border-color: var(--red-color);
+    width: 35px;
+    transition: all 0.2s linear;
+}
+
+.highlight__item--img{
+    float: right;
+    max-width: 100%;
+}
+
+.highlight__item--text{
+    width: 310px;
+    position: absolute;
+    top: 50%;
+}
+
+.highlight__item--text.highlight__item--text-top-fix{
+    top: 77%;
+}
+
+.highlight__item--text-title{
+    display: block;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.6rem;
+    margin-bottom: 15px;
+}
+
+.highlight__item--text-link{
+    color: #000;
+    font-size: 1.3rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position: relative;
+}
+
+.highlight__item--text-link::before{
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    transition: all 0.3s linear;
 }
