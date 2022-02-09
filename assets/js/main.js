@@ -92,10 +92,10 @@ var x = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-    day.innerHTML = `${days<10 ? '0'+days : days} <span>:</span>`
-    hour.innerHTML = `${hours<10 ? '0'+hours : hours} <span>:</span>`
-    minute.innerHTML = `${minutes<10 ? '0'+minutes : minutes} <span>:</span>`
-    second.innerHTML = `${seconds<10 ? '0'+seconds : seconds}`
+    day.innerHTML = `${days<10 ? '0'+days : days}<span>:</span>`
+    hour.innerHTML = `${hours<10 ? '0'+hours : hours}<span>:</span>`
+    minute.innerHTML = `${minutes<10 ? '0'+minutes : minutes}<span>:</span>`
+    second.innerHTML = `${seconds<10 ? '0'+seconds : seconds}<span></span>`
 
     if (distance < 0) {
         clearInterval(x);

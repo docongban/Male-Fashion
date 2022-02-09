@@ -51,26 +51,17 @@ html {
 /* Header Top */
 .header__top{
     background-color: #111111;
-    color: #fff;
     height: 46px;
-    width: 100%;
-    font-size: 1.5rem;
-}
-
-.header__top__group{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 46px;
-}
-
-.header__top__left{
-    padding: 0 30px;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .header__top__right{
     padding: 0 25px;
     display: flex;
+    float: right;
 }
 
 .header__top__right--sign{
@@ -304,8 +295,8 @@ html {
     color: var(--text-color);
     position: absolute;
     top: 520px;
+    left: 2%;
     cursor: pointer;
-    left: 85px;
 }
 
 .slider__btn--right{
@@ -314,7 +305,7 @@ html {
     position: absolute;
     top: 520px;
     cursor: pointer;
-    left: calc(1200px + 30px);
+    right: 2%;
 }
 
 
@@ -333,8 +324,8 @@ html {
 }
 
 .highlight__item--img{
-    float: right;
-    max-width: 100%;
+    padding-top: 67%;
+    background: top right /contain no-repeat;
 }
 
 .highlight__item--text{
@@ -669,19 +660,12 @@ html {
     font-size: 3.6rem;
     color: #111111;
     font-weight: 700;
-    padding-right: 40px;
-    position: relative;
 }
 
 .banner__time--countDown-text > span{
     color: var(--text-color);
     font-size: 2rem;
-    padding-left: 30px;
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 33px;
-    transform: translateY(-50%);
+    padding: 0 11px;
 }
 
 
@@ -693,7 +677,7 @@ html {
 
 .social__img--item{
     padding-top: 100%;
-    background: top center /cover no-repeat;
+    background: top center /contain no-repeat;
 }
 
 .social__text{
@@ -752,12 +736,10 @@ html {
     text-align: center;
 }
 
-.news__item{
-    position: relative;
-}
-
 .news__item--img{
-    object-fit: contain;
+    height: 270px;
+    background: top center /cover no-repeat;
+    position: relative;
 }
 
 .news__item--text{
@@ -765,7 +747,7 @@ html {
     bottom: 40px;
     left: 50%;
     transform: translate(-50%,100%);
-    width: 300px;
+    width: 83%;
     background-color: #fff;
     padding: 30px 30px 25px;
 }
@@ -967,12 +949,13 @@ html {
 .sidebar__search{
     border: 1px solid var(--none-active-color);
     margin-bottom: 40px;
+    position: relative;
 }
 
 .sidebar__search--input{
     border: none;
     outline: none;
-    width: 80%;
+    width: 100%;
     height: 42px;
     padding: 1px 2px 1px 20px;
     font-size: 1.5rem;
@@ -980,7 +963,11 @@ html {
 
 .sidebar__search--btn{
     height: 42px;
-    width: 45px;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    padding: 0 15px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -1053,7 +1040,7 @@ html {
     display: inline-block;
     width: 32px;
     height: 32px;
-    margin-right: 15px;
+    margin-right: 13px;
     margin-top: 15px;
     border-radius: 50%;
     cursor: pointer;
@@ -1098,7 +1085,7 @@ html {
     line-height: 1.6rem;
     font-weight: 700;
     background: #f1f5f8;
-    padding: 5px 18px;
+    padding: 5px 16px;
     display: inline-block;
     text-transform: uppercase;
     margin-right: 6px;
