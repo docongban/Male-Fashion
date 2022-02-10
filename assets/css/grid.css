@@ -282,9 +282,9 @@
         margin-right: -15px;
     }
 
-    .row.no-gutter-wide {
-        margin-left: -15px;
-        margin-right: -15px;
+    .row.no-gutter {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .col {
@@ -292,9 +292,9 @@
         padding-right: 15px;
     }
 
-    .row.no-gutter-wide .col {
-        padding-left: 15px;
-        padding-right: 15px;
+    .row.no-gutter .col {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .row.no-gutters {
