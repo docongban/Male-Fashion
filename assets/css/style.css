@@ -2,10 +2,12 @@
     margin:0;
     padding:0;
     box-sizing: inherit;
+    --title-color: #111111;
     --text-color: #3d3d3d;
     --red-color: #e53637;
     --none-active-color: #b7b7b7;
     --background: #f3f2ee;
+    --border-color: #e5e5e5;
 }
 
 html {
@@ -1191,3 +1193,184 @@ html {
 }
 
 /* End Shop page */
+
+
+/* Start About Us page */
+
+.about{
+    margin: 100px 0;
+}
+
+.about__img{
+    padding-top: 53.5%;
+    background: top center /contain no-repeat;
+}
+
+.about__item--title{
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.about__item--description{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 2.5rem;
+}
+
+
+/* Testimonial */
+
+.testimonial{
+    background-color: var(--background);
+}
+
+.testimonial__text{
+    text-align: center;
+    padding: 150px 150px 175px;
+}
+
+.testimonial__text--icon{
+    font-size: 4.5rem;
+    color: var(--red-color);
+}
+
+.testimonial__text--description{
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-style: italic;
+    color: var(--title-color);
+    margin-top: 18px;
+    padding-bottom: 20px;
+}
+
+.testimonial__text--author{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial__text--author__img{
+    height: 60px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+.testimonial__text--author__text{
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.testimonial__text--author__text-name{
+    font-size: 1.8rem;
+    color: var(--title-color);
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.testimonial__text--author__text-position{
+    font-size: 2rem;
+    color: var(--none-active-color);
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.testimonial__img{
+    padding-top: 100%;
+    background: top center /cover no-repeat;
+}
+
+
+/* Counter */
+
+.counter__group{
+    padding: 95px 0; 
+    border-bottom: 1px solid var(--border-color);
+}
+
+.counter__item{
+    display: flex;
+}
+
+.counter__item--number{
+    font-size: 6rem;
+    line-height:6rem;
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+.counter__item--text{
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    height: 60px;
+    width: 50px;
+    color: var(--text-color);
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+
+/* Our team */
+
+.title__group--name{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--red-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.title__group--description{
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    color: var(--title-color);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.team{
+    margin: 100px 0;
+}
+
+.team__item--img{
+    width: 100%;
+    height: auto;
+}
+
+.team__item--text-name{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height:2.4rem;
+    color: var(--title-color);
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 12px;
+}
+
+.team__item--text-position{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--none-active-color);
+}
+
+/* partner */
+
+.partner{
+    margin-bottom: 40px;
+}
+
+.partner__logo{
+    height: 69px;
+    margin-bottom: 75px;
+    background: top center /contain no-repeat;
+}
+
+/* End About Us page */
