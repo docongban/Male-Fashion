@@ -1,5 +1,4 @@
 // Start tab image
-
 var imageTabs = document.querySelectorAll('.image__direct--item')
 var imageDisplays = document.querySelectorAll('.image__full--item')
 
@@ -17,7 +16,6 @@ imageTabs.forEach(function(imageTab,index){
 
 
 // Start chosse size 
-
 var sizes = document.querySelectorAll('.product__detail__text--size-item')
 
 sizes.forEach(function (size,index) {
@@ -29,3 +27,20 @@ sizes.forEach(function (size,index) {
     }
 })
 // End chosse size 
+
+
+// Start tab description
+var tabs = document.querySelectorAll('.product__detail__tab--item')
+var descriptons = document.querySelectorAll('.product__detail__information--description')
+
+tabs.forEach(function (tab,index) {
+    var description = descriptons[index]
+    tab.onclick = function(){
+        document.querySelector('.product__detail__tab--item.active').classList.remove('active')
+        document.querySelector('.product__detail__information--description.active').classList.remove('active')
+
+        tab.classList.add('active')
+        description.classList.add('active')
+    }
+})
+// End tab description
