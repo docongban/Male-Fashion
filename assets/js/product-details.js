@@ -44,3 +44,17 @@ tabs.forEach(function (tab,index) {
     }
 })
 // End tab description
+
+// Start choose color
+var colors = document.querySelectorAll('.sample__product--color-item')
+var products = document.querySelectorAll('.sample__product')
+
+colors.forEach(function(color){
+    color.onclick = function(){
+        document.querySelectorAll('.sample__product--color-item.active').forEach(function(e){
+            e.classList.remove('active')
+        })
+        color.classList.add('active')
+    }
+})
+// End choose color

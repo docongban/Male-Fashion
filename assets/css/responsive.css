@@ -1,19 +1,123 @@
 /* Mobile and Tablet */
 @media (max-width: 1023px){
-    
+    .hide-on-mobile-tablet {
+        display: none;
+    }
 }
 
 /* PC */
 @media (min-width: 1024px){
-
+    .hide-on-pc {
+        display: none;
+    }
 }
 
 /*Tablet */
 @media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet {
+        display: none;
+    }
 
+    .pd-top-40-tablet{
+        padding-top: 220px;
+    }
+
+    .pd-top-460-tablet{
+        padding-top: 460px;
+    }
+
+    .header__logo--img{
+        width: 150px;
+    }
+
+    .header__navbar--list{
+        justify-content: space-between;
+    }
+
+    .header__right--favorite-icon{
+        padding: 0 15px;
+    }
+
+    .highlight__item--img{
+        margin-top: -65px;
+    }
+
+    .highlight__item--text.highlight__item--text-top-tablet{
+        top: 105%;
+    }
+
+    .banner__product--img{
+        width: 690px;
+    }
+
+    .banner__text{
+        top: 310px;
+    }
+
+    .banner__time--countDown-text > span{
+        padding: 0 61px;
+    }
+
+    .social__text{
+        position: relative;
+        padding-top: 80px;
+        width: 100%;
+    }
+
+    .news__item{
+        padding-bottom: 170px;
+    }
+
+    .news{
+        padding-bottom: 55px;
+    }
+
+    /* Shop page */
+    .slidebar__funtion__item:nth-child(4).active .slidebar__funtion__item--body,
+    .slidebar__funtion__item:nth-child(5).active .slidebar__funtion__item--body,
+    .slidebar__funtion__item:nth-child(6).active .slidebar__funtion__item--body{
+        height: 100px;
+        padding-bottom: 30px;
+    }
+
+    /* About page */
+    .testimonial__text{
+        padding: 100px 105px;
+    }
+
+    .testimonial__img{
+        height: 600px;
+    }
+
+    .counter__item{
+        padding-bottom: 25px;
+    }
+
+    .counter__group{
+        padding-bottom: 75px;
+    }
+
+    .team__item{
+        padding-bottom: 35px;
+    }
+
+    .team{
+        margin-bottom: 70px;
+    }
+
+    .partner{
+        margin-bottom: 35px;
+    }
+
+    /* Cart page */
+    .cart{
+        margin-bottom: 100px;
+    }
 }
 
 /* Mobile*/
 @media (max-width: 739px){
-
+    .hide-on-mobile {
+        display: none;
+    }
 }
