@@ -120,4 +120,178 @@
     .hide-on-mobile {
         display: none;
     }
+
+    .header__mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__logo--link{
+        line-height: 85px;
+    }
+
+    .header__mobile--menu{
+        line-height: 85px;
+        cursor: pointer;
+    }
+    
+    .header__mobile--menu > i{
+        font-size: 2.3rem;
+        color: var(--title-color);
+        padding: 4px 6px;
+        border: 1px solid var(--title-color);
+    }
+
+    /* menu */
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 1;
+        display: none;
+    }
+    
+    .overlay.active{
+        transition-delay: 0.5s;
+        display: block;
+    }
+    .mobile__menu_background.active{
+        transform: translateX(0px);
+        opacity: 1;
+        transition: all 0.5s ease-out;
+    }
+
+    .mobile__menu_background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        width: 300px;
+        z-index: 2;
+        transform: translateX(-300px);
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+
+    .mobile__menu{
+        padding: 50px 20px 30px 30px;
+    }
+
+    .mobile__menu__option{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .mobile__menu__option--item,
+    .mobile__menu__option--money{
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        color: var(--title-color);
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .mobile__menu__option--money{
+        cursor: pointer;
+        position: relative;
+    }
+
+    .mobile__menu__option--money-list.active{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all 0.2s linear;
+    }
+
+    .mobile__menu__option--money-list{
+        list-style: none;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        background-color: #111111;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.2s linear; 
+    }
+
+    .mobile__menu__option--money-item{
+        color: #fff;
+        font-size: 1.6rem;
+        margin: 7px 0;
+    }
+
+    .header__right{
+        display: flex;
+        float: none;
+        justify-content: space-evenly;
+    }
+
+    .header__right--favorite-icon{
+        padding: 0;
+    }
+
+    .mobile__menu__navbar{
+        background-color: #4c4c4c;
+        height: 55px;
+        width: 100%;
+    }
+
+    .mobile__menu__navbar--btn{
+        width: 92px;
+        background-color: #222222;
+        text-align: center;
+        border-radius: 5px;
+        float: right;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .mobile__menu__navbar--btn-text{
+        font-size: 1.8rem;
+        color: #fff;
+        padding: 5px 0;
+        margin-right: 2px;
+        font-weight: 700;
+    }
+
+    .mobile__menu__navbar--btn > i{
+        color: #fff;
+        font-size: 1.4rem;
+        padding: 10px 0;
+        margin-left: 2px;
+    }
+
+    .mobile__menu__navbar--list{
+        list-style: none;
+        background-color: #4c4c4c;
+        height: 0;
+        transition: all 0.3s;
+        overflow-y: auto;
+    }
+
+    .mobile__menu__navbar--list.active{
+        height: 180px;
+    }
+
+    .mobile__menu__navbar--list-item-link{
+        font-size: 1.6rem;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 0px 10px 40px;
+        display: block;
+    }
+
+    .mobile__menu--description{
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+
 }

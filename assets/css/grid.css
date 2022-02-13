@@ -12,8 +12,8 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -4px;
-    margin-right: -4px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .row.no-gutter {
@@ -22,8 +22,8 @@
 }
 
 .col {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .row.no-gutter .col {
@@ -445,6 +445,12 @@
 @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
         width: 690px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 739px){
+    .wide{
+        width: 510px;
     }
 }
 
