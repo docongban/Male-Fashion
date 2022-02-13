@@ -30,6 +30,10 @@ html {
     padding-right: 30px;
 }
 
+.pd-top-30{
+    padding-top: 30px;
+}
+
 .pd-bottom-125{
     padding-bottom: 125px;
 }
@@ -1882,24 +1886,12 @@ html {
     border-collapse: collapse;
 }
 
-.cart__table__thread{
-
-}
-
-.cart__table__row{
-    
-}
-
 .cart__table__row--item{
     font-size: 1.6rem;
     color: var(--title-color);
     padding: 1px 1px 25px;
     text-transform: uppercase;
     text-align: left;
-}
-
-.cart__table__body{
-    
 }
 
 .cart__table__row{
@@ -2014,21 +2006,12 @@ html {
     color: #fff;
 }
 
-
-.cart__group{
-
-}
-
 .cart__group__title{
     font-size: 1.6rem;
     color: var(--title-color);
     font-weight: 700;
     display: block;
     margin-bottom: 35px;
-}
-
-.cart__group__discount{
-
 }
 
 .cart__group__discount--input{
@@ -2101,3 +2084,166 @@ html {
 }
 
 /* End Shopping cart */
+
+
+/* Start checkout page */
+
+.checkout__form{
+    margin-top: 100px;
+}
+
+.checkout__form--coupon{
+    background-color: var(--background);
+    color: #0d0d0d;
+    font-size: 14px;
+    border-top: 2px solid #77b527;
+    background: #f5f5f5;
+    padding: 23px 30px 18px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.checkout__form--coupon > i{
+    padding-right: 15px;
+}
+
+.checkout__form--coupon-link{
+    color: #0d0d0d;
+}
+
+.checkout__form__billing__details--title{
+    display: block;
+    font-size: 1.6rem;
+    color: var(--title-color);
+    font-weight: 700;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+    text-transform: uppercase;
+}
+
+.checkout__input--label{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 17px;
+}
+
+.checkout__input--label > span{
+    color: var(--red-color);
+}
+
+.checkout__input--import,
+.checkout__input--import-add{
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    height: 50px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    font-size: 1.5rem;
+}   
+
+.checkout__input--import::placeholder,
+.checkout__input--import-add::placeholder{
+    color: var(--none-active-color);
+}
+
+.checkout__input--import-add{
+    margin-bottom: 20px;
+}
+
+.checkout__input__checkbox{
+    padding-bottom: 25px;
+}
+
+.checkout__input__checkbox--check{
+    cursor: pointer;
+}
+
+.checkout__input__checkbox--label{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-left: 20px;
+}
+
+.checkout__input__text{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--title-color);
+    padding-bottom: 35px;
+}
+
+.checkout__form{
+    margin-bottom: 95px;
+}
+
+.checkout__form__your__order{
+    padding: 30px;
+    background-color: var(--background);
+}
+
+.checkout__form__your__order--title{
+    font-size: 2.4rem;
+    color: var(--title-color);
+    font-weight: 700;
+    line-height:2.4rem;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.checkout__form__your__order__label{
+    display: flex;
+    justify-content:space-between;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+}
+
+.checkout__form__your__order__list{
+    list-style: none;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.checkout__form__your__order__item{
+    font-size: 1.6rem;
+    color: #444444;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.checkout__form__your__order--total{
+    padding: 15px 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.checkout__form__your__order__text{
+    font-size: 1.6rem;
+    color: #444444;
+    line-height: 2.8rem;
+}
+
+.checkout__form__your__order-checkbox{
+    padding-top: 15px;
+}
+
+.checkout__form__your__order__checkbox{
+    padding-bottom: 20px;
+}
+
+.checkout__form__your__order--submit{
+    font-size: 1.4rem;
+    background-color: #111111;
+    color: #fff;
+    padding: 14px 30px;
+    width: 100%;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* End checkout page */
