@@ -139,3 +139,23 @@ listMenuBtn.onclick = function(){
     list.classList.toggle('active')
 }
 // End list menu
+
+
+// Start hover product
+var productItemMobiles = document.querySelectorAll('.sample__product')
+var productHoverMobiles = document.querySelectorAll('.sample__product--hover')
+var productAddCartMobiles = document.querySelectorAll('.sample__product--add-cart')
+var productColorMobiles = document.querySelectorAll('.sample__product--color')
+
+productItemMobiles.forEach(function(productItemMobile,index){
+    var productHoverMobile = productHoverMobiles[index]
+    var productAddCartMobile = productAddCartMobiles[index]
+    var productColorMobile = productColorMobiles[index]
+
+    productItemMobile.onclick = function(){
+        productHoverMobile.classList.toggle('active')
+        productAddCartMobile.classList.toggle('active')
+        productColorMobile.classList.toggle('active')
+    }
+})
+// End hover product
