@@ -281,7 +281,7 @@
     }
 
     .mobile__menu__navbar--list.active{
-        height: 180px;
+        height: 230px;
     }
 
     .mobile__menu__navbar--list-item-link{
@@ -385,5 +385,127 @@
 
     .footer__shopping{
         padding-top: 33px;
+    }
+
+    /* Shop page */
+    .sidebar__left{
+        padding-right: 0;
+    }
+
+    .slidebar__funtion__item:nth-child(4).active .slidebar__funtion__item--body,
+    .slidebar__funtion__item:nth-child(5).active .slidebar__funtion__item--body,
+    .slidebar__funtion__item:nth-child(6).active .slidebar__funtion__item--body{
+        height: 100px;
+        padding-bottom: 30px;
+    }
+
+    .product__option--sort{
+        float: left;
+        padding-top: 35px;
+    }
+
+    /* About page */
+    .about__item{
+        padding-top: 40px;
+    }
+
+    .testimonial__text{
+        padding: 60px 40px;
+    }
+
+    .testimonial__img{
+        height: 600px;
+    }
+
+    .counter__item{
+        padding-bottom: 25px;
+    }
+
+    .counter__group{
+        padding-bottom: 75px;
+    }
+
+    .team__item{
+        padding-bottom: 35px;
+    }
+
+    .team{
+        margin-bottom: 70px;
+    }
+
+    .partner{
+        margin-bottom: 35px;
+    }
+
+    /* Blog page */
+    .thumbnail__text{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Contact page */
+    .contact__input{
+        padding-top: 50px;
+    }
+
+    /* Product detail */
+    .product__detail__text--option{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product__detail__text--color{
+        padding-left: 37px;
+        padding-top: 50px;
+    }
+
+    .product__detail__tab{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product__detail__tab--item{
+        margin-right: 0;
+    }
+
+    .product__detail__text--checkout::after{
+        border: none;
+    }
+
+    .product__detail__tab--item.active{
+        border-bottom: none;
+    }
+
+    /* Cart page */
+    .cart{
+        margin-bottom: 100px;
+    }
+
+    .cart__table__body__item--detail{
+        display: flex;
+        flex-direction: column;
+        /* margin-right: 115px; */
+        padding: 30px 10px 30px 0;
+        width: auto;
+    }
+
+    .cart__table__body__item__quanity{
+        width: 115px;
+    }
+
+    .cart__table__body__item__total--price{
+        width: 82px;
+    }
+
+    .cart__continue {
+        margin-bottom: 5px;
+        margin-top: 47px;
+    }
+    .cart__update{
+        float: none;
+    }
+    .cart__continue,
+    .cart__update{
+        text-align: center;
     }
 }

@@ -16,7 +16,7 @@
     <div class="app">
 
         <!-- Start Header Top -->
-        <div class="header__top">
+        <div class="header__top hide-on-mobile">
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-6 m-7">
@@ -50,7 +50,75 @@
         <header class="header">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-3 m-3">
+                    <!-- Start mobile menu -->
+                    <div class="overlay hide-on-pc hide-on-tablet"></div>
+                    <div class="mobile__menu_background hide-on-pc hide-on-tablet">
+                        <div class="mobile__menu">
+                            <div class="mobile__menu__option">
+                                <a href="" class="mobile__menu__option--item">sign in</a>
+                                <a href="" class="mobile__menu__option--item">faqs</a>
+                                <div class="mobile__menu__option--money">
+                                    <span class="mobile__menu__option--money-selected">USD</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                    <ul class="mobile__menu__option--money-list">
+                                        <li class="mobile__menu__option--money-item">USD</li>
+                                        <li class="mobile__menu__option--money-item">EUR</li>
+                                        <li class="mobile__menu__option--money-item">VND</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__right">
+                                <div class="header__right--search">
+                                    <i class="fas fa-search header__right--search-icon"></i>
+                                </div>
+                                <div class="header__right--favorite">
+                                    <i class="far fa-heart header__right--favorite-icon"></i>
+                                </div>
+                                <div class="header__right--cart">
+                                    <i class="fas fa-shopping-bag header__right--cart-icon"></i>
+                                    <span class="header__right--cart-total">$0.00</span>
+                                </div>
+                            </div>
+                            <div class="mobile__menu__navbar">
+                                <div class="mobile__menu__navbar--btn">
+                                    <span class="mobile__menu__navbar--btn-text">MENU</span>
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                            </div>
+                            <ul class="mobile__menu__navbar--list">
+                                <li class="mobile__menu__navbar--list-item">
+                                    <a href="index.html" class="mobile__menu__navbar--list-item-link">Home</a>
+                                </li>
+                                <li class="mobile__menu__navbar--list-item">
+                                    <a href="shop.html" class="mobile__menu__navbar--list-item-link">Shop</a>
+                                </li>
+                                <li class="mobile__menu__navbar--list-item">
+                                    <a href="about.html" class="mobile__menu__navbar--list-item-link">About Us</a>
+                                </li>
+                                <li class="mobile__menu__navbar--list-item">
+                                    <a href="blog.html" class="mobile__menu__navbar--list-item-link">Blog</a>
+                                </li>
+                                <li class="mobile__menu__navbar--list-item">
+                                    <a href="contact.html" class="mobile__menu__navbar--list-item-link">Contacts</a>
+                                </li>
+                            </ul>
+                            <p class="mobile__menu--description">Free shipping, 30-day return or refund guarantee.</p>
+                        </div>
+                    </div>
+
+                    <div class="col c-12 hide-on-pc hide-on-tablet">
+                        <div class="header__mobile">
+                            <a href="index.html" class="header__logo--link">
+                                <img src="data:image/webp;base64,UklGRpwDAABXRUJQVlA4TJADAAAvw4AFEE+jkJEkqRQWYv0Z3zsFgUCSwv5aAwkEUpzCEjtoI8mRrqonXOJP857Bq03bgMGzU97AgT++D1EACAEWjgcQgBcgAIPGhSAAAARBUGjcaBQKAxEsQKMhCgOwaAgRgIIIggA0AAACCMDMrtEzBAIEQjgnEJj/g3Rre9u2ASlbErTYvUe6957pbvbubrOj7OT+76AEAUg6zu+I/kNwI0mRFLVHi1HZNPeFd3Vd14vnQKyTkz8XpqZewhFZO6P+Nn9Mstkd9zYfd+CorGPzPqZRIabN997l25ZStG+M6UPTctiOXWGMMQVvknkThA7q/KIPaphXeVb7moLuKKzxFQ0QcG3dJ/WUE7lTd01laNnB4dQm3CdR3Q5Nrqx2TuITiBFxcHjwDOC5j2r1KhU5/bvuHH9fQsxao/t6UN8L9o4/Z7zH/rR3WOkURwZx0Fgbgt0xH9jsAcDWJ2/w4wkPom+yhwryxK82dHwfkWGqEp2Jauo9EuRwaL28Ik2ypZo057pNII/96ig01P/OwonvPrIv2/DKf8DypQcMVcpkYUsBR5ojY6hGdOZVbR4k5X8j8TqBnOr4HiuGJFDJNNQjABeX/Pu9feRft3EDOBzThDGRQI8TKrUonGPOo0+SYgt5csMaO9ItW9aJBCldX6/DegwskP7vExFJ2zkLBrueuC4RU2OoqpOdXWgUkYQoFpGMq2WhoaeIZHwSQtAmGRvUAg/Dr9cgULHrL2WxpIdApJSPJdQ5F8xhVSQkqXB0yc1xIBkoZsZUARh2lbJtCim9oF+ftwjyy0h/MUdO2g0Pk0yBzlncKendzHlUMpDl0SNuZeDWZ2KPSP9cCSltfvBfMwcgUiCzCPocaPhCBUpnerdFefcjFJyJ5caYKPC7cCSfKUJKexN1/feMYBOs/45QOTtGJGkI20pEJJUcBiWM9Klfa0MggqQPBEgUCBdiCnTOAA6D0OP2v7UGXL4bCHA2vbCNmCDdXTZD5RwUucMpaHh3Cyj6Jzb8HCJN8DjL9AdY6lA5x2Ri0mwKBc1e1gJvQK6bBEY+QTQSQX8RknMo0aFwJkZxeE6VClTnUj84l1pgZEcBDFPYQ9wStNcH1imQneX9pwcq9NcHLbBwXPf//ddwZmPQayIh7Hb9SvEynXMecYFUDYHCMj05aM6tuQugq4MZ5lyKSRYaoETfYUQeUZxLOmfIkWRCPk6B/nq5MYc=" alt="Logo" class="header__logo--img">
+                            </a>
+                            <div class="header__mobile--menu">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End mobile menu -->
+
+                    <div class="col l-3 m-3 hide-on-mobile">
                         <div class="header__logo">
                             <a href="index.html" class="header__logo--link">
                                 <img src="data:image/webp;base64,UklGRpwDAABXRUJQVlA4TJADAAAvw4AFEE+jkJEkqRQWYv0Z3zsFgUCSwv5aAwkEUpzCEjtoI8mRrqonXOJP857Bq03bgMGzU97AgT++D1EACAEWjgcQgBcgAIPGhSAAAARBUGjcaBQKAxEsQKMhCgOwaAgRgIIIggA0AAACCMDMrtEzBAIEQjgnEJj/g3Rre9u2ASlbErTYvUe6957pbvbubrOj7OT+76AEAUg6zu+I/kNwI0mRFLVHi1HZNPeFd3Vd14vnQKyTkz8XpqZewhFZO6P+Nn9Mstkd9zYfd+CorGPzPqZRIabN997l25ZStG+M6UPTctiOXWGMMQVvknkThA7q/KIPaphXeVb7moLuKKzxFQ0QcG3dJ/WUE7lTd01laNnB4dQm3CdR3Q5Nrqx2TuITiBFxcHjwDOC5j2r1KhU5/bvuHH9fQsxao/t6UN8L9o4/Z7zH/rR3WOkURwZx0Fgbgt0xH9jsAcDWJ2/w4wkPom+yhwryxK82dHwfkWGqEp2Jauo9EuRwaL28Ik2ypZo057pNII/96ig01P/OwonvPrIv2/DKf8DypQcMVcpkYUsBR5ojY6hGdOZVbR4k5X8j8TqBnOr4HiuGJFDJNNQjABeX/Pu9feRft3EDOBzThDGRQI8TKrUonGPOo0+SYgt5csMaO9ItW9aJBCldX6/DegwskP7vExFJ2zkLBrueuC4RU2OoqpOdXWgUkYQoFpGMq2WhoaeIZHwSQtAmGRvUAg/Dr9cgULHrL2WxpIdApJSPJdQ5F8xhVSQkqXB0yc1xIBkoZsZUARh2lbJtCim9oF+ftwjyy0h/MUdO2g0Pk0yBzlncKendzHlUMpDl0SNuZeDWZ2KPSP9cCSltfvBfMwcgUiCzCPocaPhCBUpnerdFefcjFJyJ5caYKPC7cCSfKUJKexN1/feMYBOs/45QOTtGJGkI20pEJJUcBiWM9Klfa0MggqQPBEgUCBdiCnTOAA6D0OP2v7UGXL4bCHA2vbCNmCDdXTZD5RwUucMpaHh3Cyj6Jzb8HCJN8DjL9AdY6lA5x2Ri0mwKBc1e1gJvQK6bBEY+QTQSQX8RknMo0aFwJkZxeE6VClTnUj84l1pgZEcBDFPYQ9wStNcH1imQneX9pwcq9NcHLbBwXPf//ddwZmPQayIh7Hb9SvEynXMecYFUDYHCMj05aM6tuQugq4MZ5lyKSRYaoETfYUQeUZxLOmfIkWRCPk6B/nq5MYc=" alt="Logo" class="header__logo--img">
@@ -58,7 +126,7 @@
                         </div>
                     </div>
         
-                    <div class="col l-6 m-6">
+                    <div class="col l-6 m-6 hide-on-mobile">
                         <div class="header__navbar">
                             <ul class="header__navbar--list">
                                 <li class="header__navbar--item">
@@ -79,8 +147,9 @@
                             </ul>
                         </div>
                     </div>
+                    
         
-                    <div class="col l-3 m-3">
+                    <div class="col l-3 m-3 hide-on-mobile">
                         <div class="header__right">
                             <div class="header__right--search">
                                 <i class="fas fa-search header__right--search-icon"></i>
@@ -127,11 +196,11 @@
         <div class="about">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-12 m-12">
+                    <div class="col l-12 m-12 c-12">
                         <div class="about__img" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/about/xabout-us.jpg.pagespeed.ic.JCJ2z0LRmk.webp')"></div>
                     </div>
-                    <div class="col l-12 m-12">
-                        <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="row hide-on-mobile">
                             <div class="col l-4 m-4">
                                 <div class="about__item">
                                     <span class="about__item--title">Who We Are ?</span>
@@ -151,6 +220,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row no-gutter hide-on-pc hide-on-tablet">
+                            <div class="col l-4 m-4 c-12">
+                                <div class="about__item">
+                                    <span class="about__item--title">Who We Are ?</span>
+                                    <p class="about__item--description">Contextual advertising programs sometimes have strict policies that need to be adhered too. Let's take Google as an example.</p>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-12">
+                                <div class="about__item">
+                                    <span class="about__item--title">Who We Do ?</span>
+                                    <p class="about__item--description">In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance.</p>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-12">
+                                <div class="about__item">
+                                    <span class="about__item--title">Why Choose Us ?</span>
+                                    <p class="about__item--description">A two or three storey house is the ideal way to maximise the piece of earth on which our home sits, but for older or infirm people.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,7 +250,7 @@
         <div class="testimonial">
             <div class="grid">
                 <div class="row no-gutter">
-                    <div class="col l-6 m-12">
+                    <div class="col l-6 m-12 c-12">
                         <div class="testimonial__text">
                             <div class="testimonial__text--icon">
                                 <i class="fa-solid fa-quote-right"></i>
@@ -176,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-6 m-12">
+                    <div class="col l-6 m-12 c-12">
                         <div class="testimonial__img" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/about/testimonial-pic.jpg.webp')"></div>
                     </div>
                 </div>
@@ -189,25 +278,25 @@
             <div class="grid wide">
                 <div class="counter__group">
                     <div class="row">
-                        <div class="col l-3 m-6">
+                        <div class="col l-3 m-6 c-12">
                             <div class="counter__item">
                                 <span class="counter__item--number" data-number="102">102</span>
                                 <span class="counter__item--text">Our Clients</span>
                             </div>
                         </div>
-                        <div class="col l-3 m-6">
+                        <div class="col l-3 m-6 c-12">
                             <div class="counter__item">
                                 <span class="counter__item--number" data-number="30">30</span>
                                 <span class="counter__item--text">Total Categories</span>
                             </div>
                         </div>
-                        <div class="col l-3 m-6">
+                        <div class="col l-3 m-6 c-12">
                             <div class="counter__item">
                                 <span class="counter__item--number" data-number="102">102</span>
                                 <span class="counter__item--text">In Country</span>
                             </div>
                         </div>
-                        <div class="col l-3 m-6">
+                        <div class="col l-3 m-6 c-12">
                             <div class="counter__item">
                                 <span class="counter__item--number" data-number="98">98%</span>
                                 <span class="counter__item--text">Happy Customer</span>
@@ -223,13 +312,13 @@
         <div class="team">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-12 m-12">
+                    <div class="col l-12 m-12 c-12">
                         <div class="title__group">
                             <span class="title__group--name">OUR TEAM</span>
                             <span class="title__group--description">Meet Our Team</span>
                         </div>
                     </div>
-                    <div class="col l-3 m-6">
+                    <div class="col l-3 m-6 c-12">
                         <div class="team__item">
                             <img src="https://preview.colorlib.com/theme/malefashion/img/about/xteam-1.jpg.pagespeed.ic.yUtf_cncsJ.webp" alt="" class="team__item--img">
                             <div class="team__item--text">
@@ -238,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-3 m-6">
+                    <div class="col l-3 m-6 c-12">
                         <div class="team__item">
                             <img src="https://preview.colorlib.com/theme/malefashion/img/about/xteam-2.jpg.pagespeed.ic.yUtf_cncsJ.webp" alt="" class="team__item--img">
                             <div class="team__item--text">
@@ -247,7 +336,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-3 m-6">
+                    <div class="col l-3 m-6 c-12">
                         <div class="team__item">
                             <img src="https://preview.colorlib.com/theme/malefashion/img/about/xteam-3.jpg.pagespeed.ic.yUtf_cncsJ.webp" alt="" class="team__item--img">
                             <div class="team__item--text">
@@ -256,7 +345,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-3 m-6">
+                    <div class="col l-3 m-6 c-12">
                         <div class="team__item">
                             <img src="https://preview.colorlib.com/theme/malefashion/img/about/xteam-4.jpg.pagespeed.ic.yUtf_cncsJ.webp" alt="" class="team__item--img">
                             <div class="team__item--text">
@@ -274,48 +363,48 @@
         <div class="partner">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-12 m-12">
+                    <div class="col l-12 m-12 c-12">
                         <div class="title__group">
                             <span class="title__group--name">partner</span>
                             <span class="title__group--description">Happy Clients</span>
                         </div>
                     </div>
-                    <div class="col l-3 m-4">
+                    <div class="col l-3 m-4 c-6">
                         <a href="" class="partner__item">
                             <div class="partner__logo" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/clients/xclient-1.png.pagespeed.ic.cuSiM4bdx2.webp')"></div>
                         </a>
                     </div>
-                    <div class="col l-3 m-4">
+                    <div class="col l-3 m-4 c-6">
                         <a href="" class="partner__item">
                             <div class="partner__logo" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/clients/xclient-2.png.pagespeed.ic.cuSiM4bdx2.webp')"></div>
                         </a>
                     </div>
-                    <div class="col l-3 m-4">
+                    <div class="col l-3 m-4 c-6">
                         <a href="" class="partner__item">
                             <div class="partner__logo" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/clients/xclient-3.png.pagespeed.ic.cuSiM4bdx2.webp')"></div>
                         </a>
                     </div>
-                    <div class="col l-3 m-4">
+                    <div class="col l-3 m-4 c-6">
                         <a href="" class="partner__item">
                             <div class="partner__logo" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/clients/xclient-4.png.pagespeed.ic.cuSiM4bdx2.webp')"></div>
                         </a>
                     </div>
-                    <div class="col l-3 m-4">
+                    <div class="col l-3 m-4 c-6">
                         <a href="" class="partner__item">
                             <div class="partner__logo" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/clients/xclient-5.png.pagespeed.ic.cuSiM4bdx2.webp')"></div>
                         </a>
                     </div>
-                    <div class="col l-3 m-4">
+                    <div class="col l-3 m-4 c-6">
                         <a href="" class="partner__item">
                             <div class="partner__logo" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/clients/xclient-6.png.pagespeed.ic.cuSiM4bdx2.webp')"></div>
                         </a>
                     </div>
-                    <div class="col l-3 m-4">
+                    <div class="col l-3 m-4 c-6">
                         <a href="" class="partner__item">
                             <div class="partner__logo" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/clients/xclient-7.png.pagespeed.ic.cuSiM4bdx2.webp')"></div>
                         </a>
                     </div>
-                    <div class="col l-3 m-4">
+                    <div class="col l-3 m-4 c-6">
                         <a href="" class="partner__item">
                             <div class="partner__logo" style="background-image: url('https://preview.colorlib.com/theme/malefashion/img/clients/xclient-8.png.pagespeed.ic.cuSiM4bdx2.webp')"></div>
                         </a>
@@ -329,7 +418,7 @@
         <footer class="footer">
             <div class="grid wide">
                 <div class="row pd-top-bottom-70">
-                    <div class="col l-3 m-6">
+                    <div class="col l-3 m-6 c-12">
                         <div class="footer__about">
                             <a href="index.html" class="footer__about--link">
                                 <img src="https://preview.colorlib.com/theme/malefashion/img/xfooter-logo.png.pagespeed.ic.itW_wULNzW.webp" alt="" class="footer__about--logo">
@@ -338,8 +427,8 @@
                             <img src="https://preview.colorlib.com/theme/malefashion/img/xpayment.png.pagespeed.ic.baCZTAO1zx.webp" alt="" class="footer__about--payment">
                         </div>
                     </div>
-                    <div class="col l-1 hide-on-tablet"></div>
-                    <div class="col l-2 m-3">
+                    <div class="col l-1 hide-on-tablet hide-on-mobile"></div>
+                    <div class="col l-2 m-3 c-12">
                         <div class="footer__shopping" >
                             <span class="footer__shopping--title">Shopping</span>
                             <a href="" class="footer__shopping--link">
@@ -356,7 +445,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col l-3 m-3">
+                    <div class="col l-3 m-3 c-12">
                         <div class="footer__shopping">
                             <span class="footer__shopping--title">Shopping</span>
                             <a href="" class="footer__shopping--link">
@@ -373,7 +462,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col l-3 m-6">
+                    <div class="col l-3 m-6 c-12">
                         <div class="footer__widget">
                             <span class="footer__widget--title">NEWLETTER</div>
                             <p class="footer__widget--text">Be the first to know about new arrivals, look books, sales & promos!</p>
@@ -386,7 +475,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col l-12 m-12">
+                        <div class="col l-12 m-12 c-12">
                             <span class="footer__copyright">Copyright © 2022 All rights reserved | This template is cloned by <a href="https://www.facebook.com/docongban">BanDC</a></span>
                         </div>
                     </div>
@@ -398,5 +487,6 @@
     </div>
 
     <script src="./assets/js/about.js"></script>
+    <script src="./assets/js/base.js"></script>
 </body>
 </html>
